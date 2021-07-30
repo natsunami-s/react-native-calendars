@@ -127,7 +127,6 @@ export default class PeriodDay extends Component {
 
     if (marking) {
       containerStyle.push({
-        borderRadius: 17,
         overflow: 'hidden'
       });
 
@@ -177,7 +176,8 @@ export default class PeriodDay extends Component {
           backgroundColor: this.theme.calendarBackground
         };
         containerStyle.push({
-          backgroundColor: flags.endingDay.color
+          backgroundColor: flags.endingDay.color,
+          borderColor: flags.startingDay.color
         });
       }
 
